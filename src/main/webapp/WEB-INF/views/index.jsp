@@ -83,19 +83,19 @@
                <p class="quote">Horarios: <strong>Lunes a Viernes, 9:00 - 17:00</strong> <br> Festivos: Cerrado</p>
                <form id="contactForm" >
                  <div class="mb-3">
-                   <label for="name" class="form-label">Nombre</label>
+                   <label for="name" class="form-label">Nombre <span style="color: red;">*</span></label>
                    <input type="text" class="form-control" id="name" name="name" required>
                  </div>
                  <div class="mb-3">
-                   <label for="phone" class="form-label">Teléfono</label>
+                   <label for="phone" class="form-label">Teléfono <span style="color: red;">*</span></label>
                    <input type="tel" class="form-control" id="phone" name="phone" required>
                  </div>
                  <div class="mb-3">
                    <label for="availableTime" class="form-label">Horario disponible</label>
-                   <input lang="es" type="datetime-local" class="form-control" id="availableTime" name="availableTime">
-                 </div>
+                   <input lang="es" type="datetime-local" step="1800" min="08:00" max="20:00" class="form-control" id="availableTime" name="availableTime">
+                   </div>
                  <div class="mb-3">
-                   <label for="message" class="form-label">Mensaje</label>
+                   <label for="message" class="form-label">Mensaje <span style="color: red;">*</span></label>
                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                  </div>
                  <button type="submit" class="btn btn-primary" id="submitClient">Enviar</button>
