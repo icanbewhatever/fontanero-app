@@ -15,6 +15,7 @@ import java.util.Optional;
 public class FontaneroApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("user.timezone", "Europe/Madrid");
 		SpringApplication.run(FontaneroApplication.class, args);
 	}
 
