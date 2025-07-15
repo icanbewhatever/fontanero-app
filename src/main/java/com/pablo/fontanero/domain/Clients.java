@@ -3,13 +3,13 @@ package com.pablo.fontanero.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 @Data
 @ToString
@@ -85,8 +85,8 @@ public class Clients {
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", message='" + message + '\'' +
-                ", availableTime=" + availableTime +
-                ", createDate=" + createDate +
+                ", availableTime=" + (availableTime != null ? availableTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME) : "null") +
+                ", createDate=" + (createDate != null ? createDate.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME) : "null") +
                 '}';
     }
 }
