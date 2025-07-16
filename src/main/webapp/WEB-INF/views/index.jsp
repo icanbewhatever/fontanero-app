@@ -10,6 +10,7 @@
         <title>Pablo Díaz Fontanería</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- This file includes code from Start Bootstrap, licensed under the MIT License -->
         <link href="css/styles.css" rel="stylesheet" />
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.js"></script>
         <link rel="stylesheet"
@@ -107,8 +108,10 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container px-4"><p class="m-0 text-center text-white">© 2025 Fontanero Pablo Diáz. All rights reserved Your Website 2023</p></div>
         </footer>
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
